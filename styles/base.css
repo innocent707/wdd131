@@ -58,12 +58,6 @@ nav a {
     padding: 0.5rem;
     color: #fff;
     text-decoration: none;
-
-    &:hover {
-        color: #fff;
-        background-color: gold;
-        font-weight: 600;
-    }
 }
 
 
