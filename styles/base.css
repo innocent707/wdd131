@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+}
+
+head {
+    display: none;
+}
+
+:root {
+    --blue: rgb(29, 77, 114);
+    --blue-1: rgb(29, 77, 114, 0.7);
+    --blue-7: rgb(3, 3, 3);
+    --brown: rgb(100, 50, 25, 1);
+    --yellow: rgb(255, 255, 0, 1);
+}
+
+body {
+    display: block;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;;
+    font-weight: 400;
+    color: #333;
+}
+
+h1 {
+    font-weight: 600;
+    grid-column: 1/3;
+    font-size: 2rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+header {
+    color: #fff;
+    background-color: var(--blue);
+}
+
+#course-title {
+    display: block;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+
+}
+
+
+
+nav a {
+    flex: 1 1 100%;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--blue);
+    color: #fff;
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.5rem;
+}
+
+footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+    background-color: var(--blue);
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(0 0 0 / 30%);
+    margin: 0.5rem;
+}
+
+.innocent {
+        width: 120px;
+        height: auto;
+        margin-right: 2rem;
+    }
+
+.card {
+    font-family: 'Gill Sans';
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0 0 0 / 30%);
+
+}
+
+.card p {
+    padding: 1rem;
+}
+
+.kojo img {
+    float: right;
+}
+
+.ghana {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ghana h3 {
+    grid-column: 1/3;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.short {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+.highlight {
+    color: aqua;
+    font-size: smaller;
+}
+
+figure {
+    margin: 0.5rem;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+    font-style: italic;
+}
