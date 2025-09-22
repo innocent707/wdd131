@@ -1,8 +1,8 @@
 :root {
-    --green: rgba(5, 90, 33, 0.842);
+    --green: rgb(5, 90, 33, 0.842);
     --yellow: rgb(207, 245, 37);
     --brown: rgb(88, 34, 7);
-    --blue: rgb(29, 77, 114, );
+    --blue: rgb(29, 77, 114);
 }
 
 *{
@@ -46,11 +46,11 @@ h1 {
     right: 1rem;
 }
 
-#button::box {
+#button::before {
     content: "≡";
 }
 
-#button.show::box {
+#button.show::before {
     content: "||";
 }
 
