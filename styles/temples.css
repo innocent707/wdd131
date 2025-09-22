@@ -1,0 +1,134 @@
+:root {
+    --green: rgba(5, 90, 33, 0.842);
+    --yellow: rgb(207, 245, 37);
+    --brown: rgb(88, 34, 7);
+    --blue: rgb(29, 77, 114, );
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:  "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+header {
+    background-color: var(--green);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+h1 {
+    padding: 2rem;
+}
+
+#button{
+    display: block;
+    font-size: 2rem;
+    background-color: var(--green);
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    top: 0;
+    padding: 0.5rem;
+    position: absolute;
+    right: 1rem;
+}
+
+#button::box {
+    content: "≡";
+}
+
+#button.show::box {
+    content: "||";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: none;
+    font-size: 2rem;
+}
+
+nav a:hover,
+nav a:active{
+    color: var(--brown);
+    font-weight: 600;
+}
+
+nav a:hover~#goals~#button {
+    background-color: var(--yellow);
+    color: aqua;
+}
+
+nav.show {
+    width: 100%;
+}
+
+h1.show {
+    display: none;
+}
+
+.show a {
+    display: block;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.ama {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+figure{
+    margin-bottom: 1rem;
+}
+
+figcaption{
+    text-align: center;
+    color: var(--green);
+}
+
+footer{
+    background-color: var(--green);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.highlight{
+    font-size: smaller;
+}

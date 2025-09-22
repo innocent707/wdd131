@@ -1,0 +1,20 @@
+@media screen and (min-width: 800px) {
+    h1.classic {
+        display: block;
+        width: 100px;
+    }
+
+    #button {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        display: block;
+        font-size: 1.5rem;
+    }
+}
